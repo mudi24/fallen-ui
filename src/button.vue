@@ -1,10 +1,27 @@
 <template>
-  <button class="f-button">按钮</button>
+  <button class="f-button" :class="{[`icon-${iconPosition}`]: true}">
+    <svg v-if="icon" class="icon">
+      <use :xlink:href="`#i-${icon}`" />
+    </svg>
+    <div class="content">
+      <slot></slot>
+    </div>
+  </button>
 </template>
 
 <script>
 export default {
-  components: {},
+  props: {
+    icon: {},
+    iconPosition: {
+      type: String,
+      default: "left",
+      validator(value) {
+        return !(value !== "left" && value !== "right");
+        // 想不到的写法： return value === "left" || value === "right";
+      }
+    }
+  },
   data() {
     return {};
   },
@@ -20,6 +37,10 @@ export default {
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   background: var(--button-bg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
   &:hover {
     border-color: var(--border-color-hover);
   }
@@ -30,6 +51,23 @@ export default {
 
   &:focus {
     outline: none;
+  }
+  > .icon {
+    order: 1;
+    margin-right: 0.1em;
+  }
+  > .content {
+    order: 2;
+  }
+  &.icon-right {
+    > .content {
+      order: 1;
+    }
+    > .icon {
+      order: 2;
+      margin-right: 0;
+      margin-left: 0.1em;
+    }
   }
 }
 </style>
