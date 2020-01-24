@@ -42,7 +42,11 @@
     <f-button :loading="loading1" @click="loading1 = !loading1">按钮</f-button>
     <f-button icon="settings" :loading="loading2" @click="loading2 = !loading2">按钮</f-button>
     <f-button icon="download" icon-position="right" :loading="loading3" @click="loading3 = !loading3">按钮</f-button>
-
+    <f-button-group>
+      <f-button icon="left">上一页</f-button>
+      <f-button>更多</f-button>
+      <f-button icon="right" icon-position="right">下一页</f-button>
+    </f-button-group>
   </div>
 
 
