@@ -6,18 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MambaNeverOut/fallen-ui.git"
+  },
   "keywords": [
     "Vue",
     "ui"
   ],
   "author": "Irelia",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MambaNeverOut/fallen-ui/issues"
+  },
+  "homepage": "https://github.com/MambaNeverOut/fallen-ui#readme",
   "dependencies": {
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.1.1",
+    "chai": "^4.2.0",
     "sass": "^1.25.0",
     "vue-template-compiler": "^2.6.11"
   },
