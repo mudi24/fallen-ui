@@ -1,5 +1,9 @@
 <template>
-  <button class="f-button" :class="{[`icon-${iconPosition}`]: true}" @click="$emit('click')">
+  <button
+    class="f-button"
+    :class="{ [`icon-${iconPosition}`]: true }"
+    @click="$emit('click')"
+  >
     <f-icon :name="icon" v-if="icon && !loading"></f-icon>
     <f-icon name="loading" v-if="loading" class="loading"></f-icon>
     <div class="content">
@@ -9,7 +13,12 @@
 </template>
 
 <script>
+import Icon from "./icon";
+
 export default {
+  components: {
+    "f-icon": Icon
+  },
   props: {
     icon: {},
     loading: {
@@ -32,7 +41,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @keyframes spin {
   0% {
     transform: rotate(0deg);
