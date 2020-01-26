@@ -26,13 +26,14 @@ const expect = chai.expect;
   const Constructor = Vue.extend(Button);
   const vm = new Constructor({
     propsData: {
-      icon: "settings"
+      icon: "settings",
+      loading: true
     }
   });
   vm.$mount();
   let useElement = vm.$el.querySelector("use");
   let href = useElement.getAttribute("xlink:href");
-  expect(href).to.eq("#i-settings");
+  expect(href).to.eq("#i-loading");
   vm.$el.remove();
   vm.$destroy();
 }
@@ -40,14 +41,13 @@ const expect = chai.expect;
   const Constructor = Vue.extend(Button);
   const vm = new Constructor({
     propsData: {
-      icon: "settings",
-      loading: true
+      icon: "settings"
     }
   });
   vm.$mount(); // 放在内存中
   let useElement = vm.$el.querySelector("use");
   let href = useElement.getAttribute("xlink:href");
-  expect(href).to.eq("#i-loading");
+  expect(href).to.eq("#i-settings");
   vm.$el.remove();
   vm.$destroy();
 }
@@ -57,13 +57,14 @@ const expect = chai.expect;
   const Constructor = Vue.extend(Button);
   const vm = new Constructor({
     propsData: {
-      icon: "settings"
+      icon: "settings",
+      iconPosition: "right"
     }
   });
   vm.$mount(div); // 放在页面中，否则css不会添加到元素上
   let svg = vm.$el.querySelector("svg");
   let { order } = window.getComputedStyle(svg);
-  expect(order).to.eq("1");
+  expect(order).to.eq("2");
   vm.$el.remove();
   vm.$destroy();
 }
