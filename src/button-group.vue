@@ -1,5 +1,5 @@
 <template>
-  <div class="f-button-group">
+  <div class="f-button-group irelia">
     <slot></slot>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .f-button-group {
   display: inline-flex;
   vertical-align: middle;
