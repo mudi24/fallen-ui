@@ -14,7 +14,8 @@ new Vue({
   data: {
     loading1: true,
     loading2: false,
-    loading3: false
+    loading3: false,
+    message: 'hi'
   },
   created() {
     setTimeout(() => {

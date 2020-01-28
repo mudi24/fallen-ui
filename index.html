@@ -44,7 +44,7 @@
     <div class="box">
       <f-input value="张三" readonly></f-input>
       <f-input value="哈哈" disabled></f-input>
-      <f-input value="哦吼吼" @change="inputChange"></f-input>
+      <f-input @change="inputChange" v-model="message"></f-input>
     </div>
     <div class="box">
       <f-input value="嘿" error="姓名不能少于两个字"></f-input>
