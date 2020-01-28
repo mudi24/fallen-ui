@@ -33,21 +33,32 @@
     }
   </style>
   <style>
-
+    .box {
+      margin: 20px;
+    }
   </style>
 </head>
 
 <body>
   <div id="app">
-    <f-button :loading="loading1" @click="loading1 = !loading1">按钮</f-button>
-    <f-button icon="settings" :loading="loading2" @click="loading2 = !loading2">按钮</f-button>
-    <f-button icon="download" icon-position="right" :loading="loading3" @click="loading3 = !loading3">按钮</f-button>
-    <f-button-group>
-      <f-button icon="left">上一页</f-button>
-      <f-button>更多</f-button>
-      <f-button icon="right" icon-position="right">下一页</f-button>
-    </f-button-group>
-    <div id="test"></div>
+    <div class="box">
+      <f-input value="张三" readonly></f-input>
+      <f-input value="哈哈" disabled></f-input>
+      <f-input value="哦吼吼"></f-input>
+    </div>
+    <div class="box">
+      <f-input value="嘿" error="姓名不能少于两个字"></f-input>
+    </div>
+    <div class="box">
+      <f-button :loading="loading1" @click="loading1 = !loading1">按钮</f-button>
+      <f-button icon="settings" :loading="loading2" @click="loading2 = !loading2">按钮</f-button>
+      <f-button icon="download" icon-position="right" :loading="loading3" @click="loading3 = !loading3">按钮</f-button>
+      <f-button-group>
+        <f-button icon="left">上一页</f-button>
+        <f-button>更多</f-button>
+        <f-button icon="right" icon-position="right">下一页</f-button>
+      </f-button-group>
+    </div>
   </div>
 
 

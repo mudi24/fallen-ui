@@ -1,9 +1,5 @@
 <template>
-  <button
-    class="f-button"
-    :class="{ [`icon-${iconPosition}`]: true }"
-    @click="$emit('click')"
-  >
+  <button class="f-button" :class="{ [`icon-${iconPosition}`]: true }" @click="$emit('click')">
     <f-icon :name="icon" v-if="icon && !loading"></f-icon>
     <f-icon name="loading" v-if="loading" class="loading"></f-icon>
     <div class="content">
@@ -16,6 +12,7 @@
 import Icon from "./icon";
 
 export default {
+  name: "Fallen-Button",
   components: {
     "f-icon": Icon
   },
