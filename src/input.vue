@@ -1,19 +1,29 @@
 <template>
   <div class="wrapper" :class="{error}">
-    <input :value="value" type="text" :disabled="disabled" :readonly="readonly" />
+    <input
+      :value="value"
+      type="text"
+      :disabled="disabled"
+      :readonly="readonly"
+      @change="$emit('change', $event)"
+      @input="$emit('input', $event)"
+      @focus="$emit('focus', $event)"
+      @blur="$emit('blur', $event)"
+    />
     <template v-if="error">
-      <f-icon name="error" class="error-icon"></f-icon>
+      <!-- <f-icon name="error" class="error-icon"></f-icon> -->
+      <icon name="error" class="error-icon"></icon>
       <span class="error-message">{{error}}</span>
     </template>
   </div>
 </template>
 
 <script>
-// import Icon from "./icon.vue";
+import Icon from "./icon.vue";
 export default {
-  // components: {
-  //   Icon
-  // },
+  components: {
+    Icon
+  },
   name: "FallenInput",
   props: {
     value: {
@@ -47,7 +57,7 @@ $red: #f14530;
   display: inline-flex;
   align-items: center;
   > :not(:last-child) {
-    margin-right: .5em;
+    margin-right: 0.5em;
   }
   > input {
     height: $height;
@@ -72,11 +82,11 @@ $red: #f14530;
   &.error > input {
     border-color: $red;
   }
-  .error-icon{
-    fill:$red;
+  .error-icon {
+    fill: $red;
   }
-  .error-message{
-    color:$red;
+  .error-message {
+    color: $red;
   }
 }
 </style>
