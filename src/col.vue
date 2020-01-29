@@ -38,10 +38,6 @@ export default {
 
 <style lang='scss' scoped>
 .col {
-  width: 50%;
-  // background: #eee;
-  // border: 1px solid #ccc;
-  // height: 100px;
   $class-prefix: col-; // class 前缀
   @for $n from 1 through 24 {
     // 遍历 1 到 24，$i 表示默认从 0 开始
