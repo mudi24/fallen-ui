@@ -47,7 +47,7 @@ export default {
     };
   },
   methods: {
-    createClasses(obj, str) {
+    createClasses(obj, str = "") {
       if (!obj) {
         return [];
       }
