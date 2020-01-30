@@ -6,12 +6,7 @@
 
 <script>
 export default {
-  name: "FallenContent",
-  components: {},
-  data() {
-    return {};
-  },
-  methods: {}
+  name: "FallenContent"
 };
 </script>
 

@@ -7,14 +7,6 @@
 <script>
 export default {
   name: "FallenLayout",
-  mounted() {
-    this.$children.forEach(vm => {
-      if (vm.$options.name === "FallenSider") {
-        this.layoutClass.hasSider = true;
-      }
-    });
-  },
-  components: {},
   data() {
     return {
       layoutClass: {
@@ -22,7 +14,13 @@ export default {
       }
     };
   },
-  methods: {}
+  mounted() {
+    this.$children.forEach(vm => {
+      if (vm.$options.name === "FallenSider") {
+        this.layoutClass.hasSider = true;
+      }
+    });
+  }
 };
 </script>
 
