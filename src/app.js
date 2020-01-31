@@ -40,8 +40,13 @@ new Vue({
   },
   methods: {
     showToast() {
-      this.$toast('我是messge');
-
+      this.$toast('<p>我是messageaa<strong>qq</strong></p>', {
+        closeButton: {
+          text: '关闭',
+          callback(toast) {},
+        },
+        enableHtml: false
+      })
     }
   }
 });
