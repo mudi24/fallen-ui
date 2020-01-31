@@ -45,7 +45,7 @@ new Vue({
           text: '关闭',
           callback(toast) {},
         },
-        autoClose: true,
+        autoClose: 3,
         enableHtml: false,
         position: 'middle'
       })
