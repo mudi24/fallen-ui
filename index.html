@@ -42,21 +42,12 @@
       border: 1px solid #666;
       min-height: 100px;
     }
-
-    .sider {
-      width: 200px;
-      background: #333;
-    }
-
-    .header {
-      height: 100px;
-      background: #999;
-    }
   </style>
 </head>
 
 <body>
   <div id="app">
+    <button @click="showToast">按钮</button>
     <f-layout style="height: 100vh;">
       <f-sider class="demo">sider</f-sider>
       <f-layout>
@@ -89,7 +80,7 @@
     <div class="box">
       <f-input value="张三" readonly></f-input>
       <f-input value="哈哈" disabled></f-input>
-      <f-input @change="inputChange" v-model="message"></f-input>
+      <f-input v-model="message"></f-input>
     </div>
     <div class="box">
       <f-input value="嘿" error="姓名不能少于两个字"></f-input>
