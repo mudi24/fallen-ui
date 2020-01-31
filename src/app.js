@@ -45,7 +45,9 @@ new Vue({
           text: '关闭',
           callback(toast) {},
         },
-        enableHtml: false
+        autoClose: false,
+        enableHtml: false,
+        position: 'middle'
       })
     }
   }
