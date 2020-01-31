@@ -47,7 +47,7 @@ new Vue({
         },
         autoClose: false,
         enableHtml: false,
-        position: 'middle'
+        position: 'bottom'
       })
     }
   }
