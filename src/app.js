@@ -40,7 +40,7 @@ new Vue({
   },
   methods: {
     showToast() {
-      this.$toast('<p>我是messageaa<strong>qq</strong></p>', {
+      this.$toast(`你的智商为${parseInt(Math.random()*100)}`, {
         closeButton: {
           text: '关闭',
           callback(toast) {},
