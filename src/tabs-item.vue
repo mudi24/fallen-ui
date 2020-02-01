@@ -44,11 +44,17 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+$blue: #1890ff;
 .tabs-item {
   flex-shrink: 1;
   padding: 0 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   &.active {
-    background: red;
+    color: $blue;
+    font-weight: bold;
   }
 }
 </style>

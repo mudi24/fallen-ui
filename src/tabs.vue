@@ -32,7 +32,17 @@ export default {
     };
   },
   mounted() {
-    this.eventBus.$emit("update:selected", this.selected);
+    this.$children.forEach(vm => {
+      if (vm.$options.name === "FallenTabsHeader") {
+        vm.$children.forEach(item => {
+          if (
+            item.$options.name === "FallenTabsItem" &&
+            item.name === this.selected
+          )
+            this.eventBus.$emit("update:selected", this.selected, this);
+        });
+      }
+    });
   }
 };
 </script>

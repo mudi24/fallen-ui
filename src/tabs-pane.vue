@@ -35,9 +35,11 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+$blue: #1890ff;
+
 .tabs-pane {
   &.active {
-    background: red;
+    color: $blue;
   }
 }
 </style>
