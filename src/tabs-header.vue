@@ -7,7 +7,8 @@
 
 <script>
 export default {
-  name: "FallenTabsHeader"
+  name: "FallenTabsHeader",
+  inject: ["eventBus"]
 };
 </script>
 

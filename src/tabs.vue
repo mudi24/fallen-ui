@@ -5,12 +5,13 @@
 </template>
 
 <script>
+import Vue from "vue";
 export default {
   name: "FallenTabs",
   props: {
     selected: {
       type: String,
-      require: true
+      required: true
     },
     direction: {
       type: String,
@@ -19,7 +20,18 @@ export default {
         return ["horizontal", "vertical"].indexOf(value) >= 0;
       }
     }
-  }
+  },
+  data() {
+    return {
+      eventBus: new Vue()
+    };
+  },
+  provide() {
+    return {
+      eventBus: this.eventBus
+    };
+  },
+  created() {}
 };
 </script>
 
