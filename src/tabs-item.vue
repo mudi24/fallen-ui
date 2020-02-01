@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     xx() {
-      this.eventBus.$emit("update:selected", this.name);
+      this.eventBus.$emit("update:selected", this.name, this);
     }
   }
 };
