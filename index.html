@@ -47,6 +47,26 @@
 
 <body>
   <div id="app">
+    <!-- <f-tabs selected="selectedTab" @update:selected="selectedTab = $event"> -->
+    <f-tabs :selected.sync="selectedTab">
+      <f-tabs-header>
+        <template slot="actions">
+          <button>设置</button>
+        </template>
+        <f-tabs-item name="woman">
+          <f-icon name="settings"></f-icon>
+          美女
+        </f-tabs-item>
+        <f-tabs-item name="finance" disabled>财经</f-tabs-item>
+        <f-tabs-item name="sports">体育</f-tabs-item>
+      </f-tabs-header>
+      <f-tabs-body>
+        <f-tabs-pane name="woman">美女相关</f-tabs-pane>
+        <f-tabs-pane name="finance">财经相关</f-tabs-pane>
+        <f-tabs-pane name="sports">体育相关</f-tabs-pane>
+      </f-tabs-body>
+    </f-tabs>
+
     <button @click="showToast">按钮</button>
     <f-layout style="height: 100vh;">
       <f-sider class="demo">sider</f-sider>
