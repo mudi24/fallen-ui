@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" :class="toastClasses">
-    <div class="toast" ref="wrapper">
+    <div class="toast" ref="toast">
       <div class="message">
         <slot v-if="!enableHtml"></slot>
         <div v-else v-html="$slots.default[0]"></div>
@@ -56,7 +56,7 @@ export default {
     updateStyles() {
       this.$nextTick(() => {
         this.$refs.line.style.height =
-          this.$refs.wrapper.getBoundingClientRect().height + "px";
+          this.$refs.toast.getBoundingClientRect().height + "px";
       });
     },
     execAutoClass() {
