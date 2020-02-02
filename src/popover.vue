@@ -18,9 +18,6 @@ export default {
       visible: false
     };
   },
-  mounted() {
-    console.log(this.$refs.triggerWrapper);
-  },
   methods: {
     xxx() {
       this.visible = !this.visible;
@@ -34,8 +31,8 @@ export default {
             top,
             left
           } = this.$refs.triggerWrapper.getBoundingClientRect();
-          this.$refs.contentWrapper.style.left = left + "px";
-          this.$refs.contentWrapper.style.top = top + "px";
+          this.$refs.contentWrapper.style.left = left + window.scrollX + "px";
+          this.$refs.contentWrapper.style.top = top + window.scrollY + "px";
           let eventHandler = () => {
             this.visible = false;
             document.removeEventListener("click", eventHandler);
