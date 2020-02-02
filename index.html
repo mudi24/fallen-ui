@@ -47,6 +47,19 @@
 
 <body>
   <div id="app">
+    <f-popover style="margin: 100px;">
+      <template slot="content">
+        <div>内容</div>
+      </template>
+      <button>按钮</button>
+    </f-popover>
+    <f-popover style="margin: 100px;">
+      <template slot="content">
+        <div>内容</div>
+      </template>
+      <button>按钮</button>
+    </f-popover>
+
     <!-- <f-tabs selected="selectedTab" @update:selected="selectedTab = $event"> -->
     <f-tabs :selected.sync="selectedTab">
       <f-tabs-header>
