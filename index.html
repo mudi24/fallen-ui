@@ -75,7 +75,32 @@
         <f-button>按钮</f-button>
       </f-popover>
     </div>
-
+    <div style="padding: 100px;">
+      <f-popover position="bottom" trigger="hover">
+        <template slot="content">
+          <div>popover内容</div>
+        </template>
+        <f-button>按钮</f-button>
+      </f-popover>
+      <f-popover position="left" trigger="hover">
+        <template slot="content">
+          <div>popover内容</div>
+        </template>
+        <f-button>按钮</f-button>
+      </f-popover>
+      <f-popover position="right" trigger="hover">
+        <template slot="content">
+          <div>popover内容</div>
+        </template>
+        <f-button>按钮</f-button>
+      </f-popover>
+      <f-popover trigger="hover">
+        <template slot="content">
+          <div>popover内容</div>
+        </template>
+        <f-button>按钮</f-button>
+      </f-popover>
+    </div>
     <!-- <f-tabs selected="selectedTab" @update:selected="selectedTab = $event"> -->
     <f-tabs :selected.sync="selectedTab">
       <f-tabs-header>
