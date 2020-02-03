@@ -18,6 +18,8 @@ import TabsBody from './tabs-body.vue'
 import TabsItem from './tabs-item.vue'
 import TabsPane from './tabs-pane.vue'
 import Popover from './popover.vue'
+import Collapse from './collapse.vue'
+import CollapseItem from './collapse-item.vue'
 
 Vue.component("f-button", Button);
 Vue.component("f-icon", Icon);
@@ -38,6 +40,8 @@ Vue.component('f-tabs-body', TabsBody)
 Vue.component('f-tabs-item', TabsItem)
 Vue.component('f-tabs-pane', TabsPane)
 Vue.component('f-popover', Popover)
+Vue.component('f-collapse', Collapse)
+Vue.component('f-collapse-item', CollapseItem)
 
 
 new Vue({
