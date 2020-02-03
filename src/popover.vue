@@ -46,24 +46,12 @@ export default {
       this.$refs.popover.addEventListener("mouseleave", this.close);
     }
   },
-  destroyed() {
+  beforedestroy() {
     if (this.trigger === "click") {
       this.$refs.popover.removeEventListener("click", this.onClick);
     } else {
       this.$refs.popover.removeEventListener("mouseenter", this.open);
       this.$refs.popover.removeEventListener("mouseleave", this.close);
-    }
-  },
-  computed: {
-    openEvent() {
-      if (this.trigger === "click") {
-        return "click";
-      } else {
-        return "mouseenter";
-      }
-    },
-    closeEvent() {
-      return this.trigger === "click" ? "click" : "mouseleave";
     }
   },
   methods: {
@@ -178,10 +166,12 @@ $border-radius: 4px;
     }
     &::before {
       border-top-color: black;
+      border-bottom: none;
       top: 100%;
     }
     &::after {
       border-top-color: white;
+      border-bottom: none;
       top: calc(100% - 1px);
     }
   }
@@ -193,10 +183,12 @@ $border-radius: 4px;
     }
     &::before {
       border-bottom-color: black;
+      border-top: none;
       bottom: 100%;
     }
     &::after {
       border-bottom-color: white;
+      border-top: none;
       bottom: calc(100% - 1px);
     }
   }
@@ -210,10 +202,12 @@ $border-radius: 4px;
     }
     &::before {
       border-left-color: black;
+      border-right: none;
       left: 100%;
     }
     &::after {
       border-left-color: white;
+      border-right: none;
       left: calc(100% - 1px);
     }
   }
@@ -226,12 +220,18 @@ $border-radius: 4px;
     }
     &::before {
       border-right-color: black;
+      border-left: none;
       right: 100%;
     }
     &::after {
       border-right-color: white;
+      border-left: none;
       right: calc(100% - 1px);
     }
   }
 }
 </style>
+
+
+// 设置hover后200ms内消失，如果移入content则取消定时器
+// 移出content则再设置一个定时器 
