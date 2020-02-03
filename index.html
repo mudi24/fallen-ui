@@ -47,12 +47,16 @@
 
 <body>
   <div id="app">
-    <f-popover style="margin: 100px;">
-      <template slot="content">
-        <div>内容</div>
-      </template>
-      <button>按钮</button>
-    </f-popover>
+    <div style="overflow: hidden; border: 1px solid red;margin: 50px;" @click="yyy">
+
+      <f-popover style="border: 1px solid #000;">
+        <template slot="content">
+          <div>内容</div>
+        </template>
+        <button>按钮</button>
+      </f-popover>
+    </div>
+
     <f-popover style="margin: 100px;">
       <template slot="content">
         <div>内容</div>
@@ -129,7 +133,6 @@
       </f-button-group>
     </div>
   </div>
-
 
   <script src="./src/app.js"></script>
   <script>

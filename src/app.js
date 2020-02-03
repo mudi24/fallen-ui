@@ -53,6 +53,9 @@ new Vue({
 
   },
   methods: {
+    yyy() {
+      console.log('yyy');
+    },
     showToast() {
       this.$toast(`你的智商为${parseInt(Math.random()*100)}`, {
         closeButton: {
