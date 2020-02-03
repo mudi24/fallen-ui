@@ -49,9 +49,9 @@
   <div id="app">
     <div style="padding: 100px;">
       <f-popover position="bottom">
-        <template slot="content">
-          <div>popover内容</div>
-
+        <template slot="content" slot-scope="{close}">
+          <div>popover内容 <a href="https://www.baidu.com/">qq</a></div>
+          <f-button @click="close">关闭</f-button>
         </template>
         <f-button>按钮</f-button>
       </f-popover>
