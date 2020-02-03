@@ -48,15 +48,26 @@
 <body>
   <div id="app">
     <div style="padding: 100px;">
-      <f-popover>
+      <f-popover position="bottom">
         <template slot="content">
-          <div>
-            popover内容popover内容popover内容popover内容popover内容popover内容popover内容popover内容popover内容popover内容fafafafafafaffafafafafafafafafa
-          </div>
+          <div>popover内容</div>
+
         </template>
         <f-button>按钮</f-button>
       </f-popover>
+      <f-popover position="left">
+        <template slot="content">
+          <div>popover内容</div>
+        </template>
+        <f-button>按钮</f-button>
+      </f-popover>
+      <f-popover position="right">
+        <template slot="content">
+          <div>popover内容</div>
 
+        </template>
+        <f-button>按钮</f-button>
+      </f-popover>
       <f-popover>
         <template slot="content">
           <div>popover内容</div>
