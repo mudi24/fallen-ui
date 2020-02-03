@@ -47,22 +47,23 @@
 
 <body>
   <div id="app">
-    <div style="overflow: hidden; border: 1px solid red;margin: 50px;" @click="yyy">
-
-      <f-popover style="border: 1px solid #000;">
+    <div style="padding: 100px;">
+      <f-popover>
         <template slot="content">
-          <div>内容</div>
+          <div>
+            popover内容popover内容popover内容popover内容popover内容popover内容popover内容popover内容popover内容popover内容fafafafafafaffafafafafafafafafa
+          </div>
         </template>
-        <button>按钮</button>
+        <f-button>按钮</f-button>
+      </f-popover>
+
+      <f-popover>
+        <template slot="content">
+          <div>popover内容</div>
+        </template>
+        <f-button>按钮</f-button>
       </f-popover>
     </div>
-
-    <f-popover style="margin: 100px;">
-      <template slot="content">
-        <div>内容</div>
-      </template>
-      <button>按钮</button>
-    </f-popover>
 
     <!-- <f-tabs selected="selectedTab" @update:selected="selectedTab = $event"> -->
     <f-tabs :selected.sync="selectedTab">
