@@ -48,7 +48,7 @@
 <body>
   <div id="app">
     <div style="padding: 100px;">
-      <f-collapse selected="2">
+      <f-collapse :selected.sync="selectedTab" single>
         <f-collapse-item title="标题1" name="1">内容1</f-collapse-item>
         <f-collapse-item title="标题2" name="2">内容2</f-collapse-item>
         <f-collapse-item title="标题3" name="3">内容3</f-collapse-item>
@@ -109,7 +109,7 @@
       </f-popover>
     </div>
     <!-- <f-tabs selected="selectedTab" @update:selected="selectedTab = $event"> -->
-    <f-tabs :selected.sync="selectedTab">
+    <!-- <f-tabs :selected.sync="selectedTab">
       <f-tabs-header>
         <template slot="actions">
           <button>设置</button>
@@ -126,7 +126,7 @@
         <f-tabs-pane name="finance">财经相关</f-tabs-pane>
         <f-tabs-pane name="sports">体育相关</f-tabs-pane>
       </f-tabs-body>
-    </f-tabs>
+    </f-tabs> -->
 
     <button @click="showToast">按钮</button>
     <f-layout style="height: 100vh;">
