@@ -5,11 +5,30 @@
 </template>
 
 <script>
+import Vue from "vue";
 export default {
   name: "FallenCollapse",
-  components: {},
+  props: {
+    single: {
+      type: Boolean,
+      default: false
+    },
+    selected: {
+      type: String
+    }
+  },
+  mounted() {
+    this.eventBus.$emit("update:selected", this.selected);
+  },
+  provide() {
+    return {
+      eventBus: this.eventBus
+    };
+  },
   data() {
-    return {};
+    return {
+      eventBus: new Vue()
+    };
   },
   methods: {}
 };
