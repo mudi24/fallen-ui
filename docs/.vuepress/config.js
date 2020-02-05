@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/fallen-ui/',
   title: 'Fallen UI',
   description: '一个很 nice 的 UI 框架 ',
   themeConfig: {
