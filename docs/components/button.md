@@ -7,8 +7,8 @@ sidebarDepth: 2
 
 使用方法
 
-<!-- <ClientOnly> -->
+<ClientOnly>
 
 <button-demos></button-demos>
 
-<!-- </ClientOnly> -->
+</ClientOnly>
