@@ -1,28 +1,38 @@
 <template>
   <div>
+    <h2>简单用法</h2>
+    <h4>预览</h4>
     <f-button>默认按钮</f-button>
     <f-button icon="settings">默认按钮</f-button>
     <f-button :loading="true">默认按钮</f-button>
     <f-button disabled>默认按钮</f-button>
+
+    <h4>代码</h4>
     <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
-import Button from "../../../src/button.vue";
+import FButton from "../../../src/button.vue";
 export default {
   components: {
-    "f-button": Button
+    "f-button": FButton
   },
   data() {
     return {
       content: `
-      <f-button>默认按钮</f-button>
-      <f-button icon="settings">默认按钮</f-button>
-      <f-button :loading="true">默认按钮</f-button>
-      <f-button disabled>默认按钮</f-button>`
+        <f-button>默认按钮</f-button>
+        <f-button icon="settings">默认按钮</f-button>
+        <f-button :loading="true">默认按钮</f-button>
+        <f-button disabled>默认按钮</f-button>
+      `
         .replace(/\t+|\s{2,}/g, "\n")
         .trim()
     };
   }
 };
 </script>
+<style>
+.f-button {
+  margin: 4px 0;
+}
+</style>

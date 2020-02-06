@@ -3,12 +3,11 @@ title: Button
 sidebarDepth: 2
 ---
 
-# button
-
-使用方法
+# Button 按钮
 
 <ClientOnly>
 
 <button-demos></button-demos>
+<button-group-demos></button-group-demos>
 
 </ClientOnly>
