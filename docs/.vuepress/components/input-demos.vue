@@ -18,10 +18,10 @@
   </div>
 </template>
 <script>
-import Input from "../../../src/input.vue";
+import FInput from "../../../src/input.vue";
 export default {
   components: {
-    "f-input": Input
+    "f-input": FInput
   },
   data() {
     return {

@@ -1,13 +1,13 @@
 ---
-title: Grid
+title: Grid 网格
 ---
 
 # grid
 
-## 简单用法
-
 <ClientOnly>
 
 <grid-demos></grid-demos>
+<grid-gutter-demos></grid-gutter-demos>
+<grid-offset-demos></grid-offset-demos>
 
 </ClientOnly>

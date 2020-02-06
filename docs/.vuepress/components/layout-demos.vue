@@ -6,6 +6,10 @@
 </template>
 <script>
 import Layout from "../../../src/layout.vue";
+import Header from "../../../src/header.vue";
+import Content from "../../../src/content.vue";
+import Footer from "../../../src/footer.vue";
+import Sider from "../../../src/sider.vue";
 export default {
   components: {
     "f-layout": Layout
