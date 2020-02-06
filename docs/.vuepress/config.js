@@ -9,11 +9,11 @@ module.exports = {
       },
       {
         text: '交流',
-        link: '/guide/'
+        link: 'https://www.google.com/'
       },
       {
-        text: '交流',
-        link: 'https://www.google.com'
+        text: 'GitHub',
+        link: 'https://github.com/MambaNeverOut'
       },
     ],
     sidebar: [{
@@ -22,7 +22,15 @@ module.exports = {
       },
       {
         title: '组件',
-        children: ['/components/button']
+        children: ['/components/button',
+          '/components/input',
+          '/components/grid',
+          '/components/layout',
+          '/components/toast',
+          '/components/tabs',
+          '/components/popover',
+          '/components/collapse',
+        ],
       },
     ]
   }
