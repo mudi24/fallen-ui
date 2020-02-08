@@ -99,6 +99,9 @@ export default {
 };
 </script>
 <style scoped>
+ul > li {
+  list-style: circle;
+}
 .demoRow {
   margin: 10px 0;
 }
