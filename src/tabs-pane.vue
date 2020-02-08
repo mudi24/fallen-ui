@@ -38,8 +38,8 @@ export default {
 $blue: #1890ff;
 
 .tabs-pane {
+  padding: 1em;
   &.active {
-    color: $blue;
   }
 }
 </style>
