@@ -4,10 +4,10 @@ title: Toast
 
 # toast
 
-## 简单用法
-
 <ClientOnly>
 
 <toast-demos></toast-demos>
+<toast-close-demos></toast-close-demos>
+<toast-html-demos></toast-html-demos>
 
 </ClientOnly>

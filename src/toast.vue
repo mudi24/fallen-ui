@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" :class="toastClasses">
+  <div class="fallen-toast" :class="toastClasses">
     <div class="toast" ref="toast">
       <div class="message">
         <slot v-if="!enableHtml"></slot>
@@ -114,7 +114,7 @@ $animation-duration: 500ms;
     opacity: 1;
   }
 }
-.wrapper {
+.fallen-toast {
   position: fixed;
   left: 50%;
   transform: translateX(-50%);

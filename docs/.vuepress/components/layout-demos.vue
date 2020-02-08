@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>布局</h2>
-    <div>简介：</div>
+    <h4>简介：</h4>
     <ul>
       <li>f-layout: 外层组件，用来包裹以下组件</li>
       <li>f-header: 顶部栏</li>
