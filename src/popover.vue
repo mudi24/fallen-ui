@@ -73,7 +73,7 @@ export default {
         },
         bottom: {
           top: top + height + window.scrollY,
-          left: left + window.scrollY
+          left: left + window.scrollX
         },
         left: {
           top: top + (height - height2) / 2 + window.scrollY,

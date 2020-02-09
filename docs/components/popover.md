@@ -4,10 +4,9 @@ title: Popover
 
 # popover
 
-## 简单用法
-
 <ClientOnly>
 
 <popover-demos></popover-demos>
+<popover-hover-demos></popover-hover-demos>
 
 </ClientOnly>
