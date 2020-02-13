@@ -1,6 +1,6 @@
 <template>
   <div style="padding-top:16px;">
-    <h2>折叠面板</h2>
+    <h2>手风琴</h2>
     <h4>简介：</h4>
     <ul>
       <li>
@@ -19,10 +19,10 @@
       </li>
     </ul>
     <h4>预览</h4>
-    <f-collapse :selected.sync="selectedTab">
-      <f-collapse-item title="标题1" name="1">两只老虎，两只老虎，跑得快，跑得快</f-collapse-item>
-      <f-collapse-item title="标题2" name="2">一只没有耳朵，一只没有尾巴</f-collapse-item>
-      <f-collapse-item title="标题3" name="3">好奇怪，好奇怪</f-collapse-item>
+    <f-collapse :selected.sync="selectedTab" single>
+      <f-collapse-item title="标题1" name="1">内容1</f-collapse-item>
+      <f-collapse-item title="标题2" name="2">内容2</f-collapse-item>
+      <f-collapse-item title="标题3" name="3">内容3</f-collapse-item>
     </f-collapse>
     <h4>代码</h4>
     <pre><code>{{ content }}</code></pre>
@@ -38,9 +38,9 @@ export default {
   },
   data() {
     return {
-      selectedTab: ["2", "3"],
+      selectedTab: ["2"],
       content: `
-        <f-collapse :selected.sync="selectedTab" >
+        <f-collapse :selected.sync="selectedTab" single>
           <f-collapse-item title="标题1" name="1">
             内容1
           </f-collapse-item>
@@ -61,7 +61,7 @@ export default {
 ul > li {
   list-style: circle;
 }
-/* .collapse > .collapseItem:nth-child(1) {
+.collapse > .collapseItem:nth-child(1) {
   background: lightskyblue;
   color: white;
 }
@@ -72,5 +72,5 @@ ul > li {
 .collapse > .collapseItem:nth-child(3) {
   background: skyblue;
   color: white;
-} */
+}
 </style>

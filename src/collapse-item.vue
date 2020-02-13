@@ -1,9 +1,14 @@
 <template>
   <div class="collapseItem">
-    <div class="title" @click="toggle">{{title}}</div>
-    <div class="content" v-if="open">
-      <slot></slot>
+    <div class="title" @click="toggle">
+      {{title}}
+      <f-icon :class="{open}" class="fallen-icon" name="right"></f-icon>
     </div>
+    <transition name="slide">
+      <div class="content" v-if="open">
+        <slot></slot>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -56,10 +61,17 @@ $border-radius: 4px;
   > .title {
     border: 1px solid $grey;
     margin: -1px -1px 0px -1px;
-    min-height: 32px;
+    // min-height: 32px;
     display: flex;
     align-items: center;
-    padding: 0 8px;
+    justify-content: space-between;
+    padding: 12px 16px;
+    position: relative;
+    > .fallen-icon {
+      &.open {
+        transform: rotate(90deg);
+      }
+    }
   }
   &:first-child {
     > .title {
@@ -74,7 +86,32 @@ $border-radius: 4px;
     }
   }
   > .content {
-    padding: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+}
+.slide-enter-active {
+  animation: my-in 0.3s ease-in-out;
+}
+.slide-leave-active {
+  animation: my-out 0.3s ease-in-out;
+}
+
+@keyframes my-in {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: auto;
+  }
+}
+@keyframes my-out {
+  0% {
+    height: auto;
+  }
+  100% {
+    height: 0;
   }
 }
 </style>
