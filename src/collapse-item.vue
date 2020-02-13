@@ -13,8 +13,13 @@
 </template>
 
 <script>
+import FIcon from "./icon.vue";
+
 export default {
   name: "FallenCollapse",
+  components: {
+    "f-icon": FIcon
+  },
   props: {
     title: {
       type: String,

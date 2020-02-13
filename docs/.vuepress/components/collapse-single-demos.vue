@@ -20,9 +20,9 @@
     </ul>
     <h4>预览</h4>
     <f-collapse :selected.sync="selectedTab" single>
-      <f-collapse-item title="标题1" name="1">内容1</f-collapse-item>
-      <f-collapse-item title="标题2" name="2">内容2</f-collapse-item>
-      <f-collapse-item title="标题3" name="3">内容3</f-collapse-item>
+      <f-collapse-item title="标题1" name="1">门前大桥下，游过一群鸭</f-collapse-item>
+      <f-collapse-item title="标题2" name="2">快来快来数一数，二四六七八</f-collapse-item>
+      <f-collapse-item title="标题3" name="3">李雷在和韩梅梅学习外语</f-collapse-item>
     </f-collapse>
     <h4>代码</h4>
     <pre><code>{{ content }}</code></pre>

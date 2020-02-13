@@ -61,16 +61,16 @@ export default {
 ul > li {
   list-style: circle;
 }
-/* .collapse > .collapseItem:nth-child(1) {
-  background: lightskyblue;
-  color: white;
-}
-.collapse > .collapseItem:nth-child(2) {
-  background: deepskyblue;
-  color: white;
+.collapse > .collapseItem:nth-child(1) {
+  background: rgb(240, 240, 240);
+  color: blcak;
 }
 .collapse > .collapseItem:nth-child(3) {
-  background: skyblue;
-  color: white;
-} */
+  background: rgb(220, 220, 220);
+  color: black;
+}
+.collapse > .collapseItem:nth-child(2) {
+  background: rgb(210, 210, 210);
+  /* color: white; */
+}
 </style>

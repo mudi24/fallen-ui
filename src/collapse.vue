@@ -6,8 +6,12 @@
 
 <script>
 import Vue from "vue";
+import FIcon from "./icon.vue";
 export default {
   name: "FallenCollapse",
+  components: {
+    "f-icon": FIcon
+  },
   props: {
     single: {
       type: Boolean,
