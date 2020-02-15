@@ -6,9 +6,6 @@
     <f-button icon="settings">默认按钮</f-button>
     <f-button :loading="true">默认按钮</f-button>
     <f-button disabled>默认按钮</f-button>
-
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>

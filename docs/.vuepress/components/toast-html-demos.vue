@@ -3,8 +3,6 @@
     <h2>设置HTML</h2>
     <h4>预览</h4>
     <f-button @click="onClickButton">上方弹出</f-button>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>

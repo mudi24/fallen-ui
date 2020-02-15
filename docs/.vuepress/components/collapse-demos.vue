@@ -24,8 +24,6 @@
       <f-collapse-item title="标题2" name="2">一只没有耳朵，一只没有尾巴</f-collapse-item>
       <f-collapse-item title="标题3" name="3">好奇怪，好奇怪</f-collapse-item>
     </f-collapse>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -38,21 +36,7 @@ export default {
   },
   data() {
     return {
-      selectedTab: ["2", "3"],
-      content: `
-        <f-collapse :selected.sync="selectedTab" >
-          <f-collapse-item title="标题1" name="1">
-            内容1
-          </f-collapse-item>
-          <f-collapse-item title="标题2" name="2">
-            内容2
-          </f-collapse-item>
-          <f-collapse-item title="标题3" name="3">
-            内容3
-          </f-collapse-item>
-        </f-collapse>`
-        .replace(/^ {8}/gm, "")
-        .trim()
+      selectedTab: ["2", "3"]
     };
   }
 };
@@ -63,14 +47,11 @@ ul > li {
 }
 .collapse > .collapseItem:nth-child(1) {
   background: rgb(240, 240, 240);
-  color: blcak;
 }
 .collapse > .collapseItem:nth-child(3) {
   background: rgb(220, 220, 220);
-  color: black;
 }
 .collapse > .collapseItem:nth-child(2) {
   background: rgb(210, 210, 210);
-  /* color: white; */
 }
 </style>

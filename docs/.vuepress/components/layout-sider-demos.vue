@@ -2,7 +2,7 @@
   <div>
     <h2>sider布局</h2>
     <h4>预览</h4>
-    <f-layout style="color: white; overflow:hidden; margin-bottom:50px;">
+    <f-layout style="color: white; overflow:hidden; ">
       <f-header style="height: 50px; background:lightskyblue;">header</f-header>
       <f-layout>
         <f-sider style="height: 100px; background:#ddd; width:200px; color: black;">sider</f-sider>
@@ -10,8 +10,6 @@
       </f-layout>
       <f-footer style="height: 50px; background:lightskyblue;">footer</f-footer>
     </f-layout>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -27,29 +25,6 @@ export default {
     "f-content": FContent,
     "f-sider": FSider,
     "f-footer": FFooter
-  },
-  data() {
-    return {
-      content: `
-        <f-layout style="color: white; overflow:hidden; margin-bottom:50px;">
-          <f-header style="height: 50px; background:lightskyblue;">
-            header
-          </f-header>
-          <f-layout>
-            <f-sider style="height: 100px; background:#ddd; width:200px; color: black;">
-              sider
-            </f-sider>
-            <f-content style="height: 100px; background:deepskyblue;">
-              content
-            </f-content>
-          </f-layout>
-          <f-footer style="height: 50px; background:lightskyblue;">
-            footer
-          </f-footer>
-        </f-layout>`
-        .replace(/^ {8}/gm, "")
-        .trim()
-    };
   }
 };
 </script>

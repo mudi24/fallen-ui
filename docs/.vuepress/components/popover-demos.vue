@@ -24,8 +24,6 @@
       <f-button>右边弹出</f-button>
       <template slot="content">弹出内容</template>
     </f-popover>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -35,38 +33,6 @@ export default {
   components: {
     "f-button": FButton,
     "f-popover": FPopover
-  },
-  data() {
-    return {
-      content: `
-        <f-popover>
-          <f-button>上方弹出</f-button>
-          <template slot="content">
-            弹出内容
-          </template>
-        </f-popover>
-        <f-popover position="bottom">
-          <f-button>下方弹出</f-button>
-          <template slot="content">
-            弹出内容
-          </template>
-        </f-popover>
-        <f-popover position="left">
-          <f-button>左边弹出</f-button>
-          <template slot="content">
-            弹出内容
-          </template>
-        </f-popover>
-        <f-popover position="right">
-          <f-button>右边弹出</f-button>
-          <template slot="content">
-            弹出内容
-          </template>
-        </f-popover>
-      `
-        .replace(/^ {8}/gm, "")
-        .trim()
-    };
   }
 };
 </script>

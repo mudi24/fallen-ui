@@ -7,8 +7,6 @@
       <f-button>更多</f-button>
       <f-button icon="right" icon-position="right">下一页</f-button>
     </f-button-group>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>

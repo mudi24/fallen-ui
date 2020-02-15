@@ -39,8 +39,6 @@
         <div class="demoCol">4</div>
       </f-col>
     </f-row>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -54,46 +52,7 @@ export default {
   },
   data() {
     return {
-      text: '<f-col span="6"></f-col>',
-      content: `
-        *{
-          box-sizing: border-box;
-        }
-        <f-row>
-          <f-col span="12">
-            <div>12</div>
-          </f-col>
-          <f-col>
-            <div>12</div>
-          </f-col>
-          <f-col>
-            <div>12</div>
-          </f-col>
-        </f-row>
-
-        <f-row>
-          <f-col span="4">
-            <div>4</div>
-          </f-col>
-          <f-col span="4">
-            <div>4</div>
-          </f-col>
-          <f-col span="4">
-            <div>4</div>
-          </f-col>
-          <f-col span="4">
-            <div>4</div>
-          </f-col>
-          <f-col span="4">
-            <div>4</div>
-          </f-col>
-          <f-col span="4">
-            <div>4</div>
-          </f-col>
-        </f-row>
-      `
-        .replace(/^ {8}/gm, "")
-        .trim()
+      text: '<f-col span="6"></f-col>'
     };
   }
 };

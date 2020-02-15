@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h2>设置空隙</h2>
+    <h2>自定义每个空隙</h2>
+    <p>可以用 offset 属性任意设置两个 col 元素之间的空隙</p>
     <h4>预览</h4>
     <f-row class="demoRow" gutter="10">
       <f-col span="4">
@@ -36,8 +37,6 @@
         <div class="demoCol">2</div>
       </f-col>
     </f-row>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -48,52 +47,6 @@ export default {
   components: {
     "f-row": FRow,
     "f-col": FCol
-  },
-  data() {
-    return {
-      content: `
-        *{
-          box-sizing: border-box;
-        }
-        <f-row gutter="10">
-          <f-col span="4">
-            <div>4</div>
-          </f-col>
-          <f-col span="4" offset="1">
-            <div>4</div>
-          </f-col>
-          <f-col span="4" offset="4">
-            <div>4</div>
-          </f-col>
-          <f-col span="4" offset="3">
-            <div>4</div>
-          </f-col>
-        </f-row>
-        
-        <f-row>
-          <f-col span="2">
-            <div>2</div>
-          </f-col>
-          <f-col span="2" offset="3">
-            <div>2</div>
-          </f-col>
-          <f-col span="2" offset="6">
-            <div>2</div>
-          </f-col>
-          <f-col span="2" offset="2">
-            <div>2</div>
-          </f-col>
-          <f-col span="2" offset="1">
-            <div>2</div>
-          </f-col>
-          <f-col span="2">
-            <div>2</div>
-          </f-col>
-        </f-row>
-      `
-        .replace(/^ {8}/gm, "")
-        .trim()
-    };
   }
 };
 </script>

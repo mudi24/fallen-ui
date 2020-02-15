@@ -10,13 +10,11 @@
       <li>f-sider: 侧边栏（可选）</li>
     </ul>
     <h4>预览</h4>
-    <f-layout style="color: white; margin-bottom:50px;">
+    <f-layout style="color: white; ">
       <f-header style="height: 50px; background:lightskyblue;">header</f-header>
       <f-content style="height: 100px; background:deepskyblue;">content</f-content>
       <f-footer style="height: 50px; background:lightskyblue;">footer</f-footer>
     </f-layout>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -31,24 +29,6 @@ export default {
     "f-header": FHeader,
     "f-content": FContent,
     "f-footer": FFooter
-  },
-  data() {
-    return {
-      content: `
-        <f-layout style="color: white; margin-bottom:50px;">
-          <f-header style="height: 50px; background:lightskyblue;">
-            header
-          </f-header>
-          <f-content style="height: 100px; background:deepskyblue;">
-            content
-          </f-content>
-          <f-footer style="height: 50px; background:lightskyblue;">
-            footer
-          </f-footer>
-        </f-layout>`
-        .replace(/^ {8}/gm, "")
-        .trim()
-    };
   }
 };
 </script>

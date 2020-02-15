@@ -12,8 +12,6 @@
     <f-button @click="$toast('点击弹出提示')">上方弹出</f-button>
     <f-button @click="$toast('点击弹出提示', {position:'middle'})">中间弹出</f-button>
     <f-button @click="$toast('点击弹出提示', {position:'bottom'})">下方弹出</f-button>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -26,22 +24,6 @@ export default {
   components: {
     "f-button": FButton
   },
-  data() {
-    return {
-      content: `
-        <style>
-          .fallen-toast {
-            z-index: 30 ;
-          }
-        </style>
-
-        <f-button @click="$toast('点击弹出提示')">上方弹出</f-button>
-        <f-button @click="$toast('点击弹出提示', {position:'middle'})">中间弹出</f-button>
-        <f-button @click="$toast('点击弹出提示', {position:'bottom'})">下方弹出</f-button>`
-        .replace(/^ {8}/gm, "")
-        .trim()
-    };
-  }
 };
 </script>
 

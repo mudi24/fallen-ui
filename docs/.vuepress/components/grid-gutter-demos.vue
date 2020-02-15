@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h2>设置 gutter</h2>
+    <h2>设置固定空隙</h2>
+    <p>可以用 gutter 属性设置 row 元素之间所有 col 元素之间的空隙</p>
     <h4>预览</h4>
     <f-row class="demoRow" gutter="10">
       <f-col span="8">
@@ -27,8 +28,6 @@
         <div class="demoCol">6</div>
       </f-col>
     </f-row>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -39,43 +38,6 @@ export default {
   components: {
     "f-row": FRow,
     "f-col": FCol
-  },
-  data() {
-    return {
-      content: `
-        *{
-          box-sizing: border-box;
-        }
-        <f-row gutter="10">
-          <f-col span="8" >
-            <div>8</div>
-          </f-col>
-          <f-col>
-            <div>8</div>
-          </f-col>
-          <f-col>
-            <div>8</div>
-          </f-col>
-        </f-row>
-
-        <f-row gutter="10">
-          <f-col span="6">
-            <div>6</div>
-          </f-col>
-          <f-col span="6">
-            <div>6</div>
-          </f-col>
-          <f-col span="6">
-            <div>6</div>
-          </f-col>
-          <f-col span="6">
-            <div>6</div>
-          </f-col>
-        </f-row>
-      `
-        .replace(/^ {8}/gm, "")
-        .trim()
-    };
   }
 };
 </script>

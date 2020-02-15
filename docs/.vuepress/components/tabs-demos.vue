@@ -29,8 +29,6 @@
         <f-tabs-pane name="3">content 3</f-tabs-pane>
       </f-tabs-body>
     </f-tabs>
-    <h4>代码</h4>
-    <pre><code>{{ content }}</code></pre>
   </div>
 </template>
 <script>
@@ -50,29 +48,7 @@ export default {
   },
   data() {
     return {
-      selected: "2",
-      content: `
-        data(){
-          return{
-            selected:'2'
-          }
-        }
-
-        <f-tabs :selected="selected">
-          <f-tabs-header>
-            <f-tabs-item name="1">tab 1</f-tabs-item>
-            <f-tabs-item name="2">tab 2</f-tabs-item>
-            <f-tabs-item name="3">tab 3</f-tabs-item>
-          </f-tabs-header>
-          <f-tabs-body>
-            <f-tabs-pane name="1">content 1</f-tabs-pane>
-            <f-tabs-pane name="2">content 2</f-tabs-pane>
-            <f-tabs-pane name="3">content 3</f-tabs-pane>
-          </f-tabs-body>
-        </f-tabs>
-      `
-        .replace(/^ {8}/gm, "")
-        .trim()
+      selected: "2"
     };
   }
 };
