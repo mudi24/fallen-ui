@@ -9,7 +9,7 @@ module.exports = {
       },
       {
         text: '交流',
-        link: 'https://mail.google.com/mail/u/0/#inbox?compose=new'
+        link: 'https://www.google.com/'
       },
       {
         text: 'GitHub',
