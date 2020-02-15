@@ -106,17 +106,21 @@ $border-radius: 4px;
 @keyframes my-in {
   0% {
     height: 0;
+    padding: 0;
   }
   100% {
     height: auto;
+    padding: 16px;
   }
 }
 @keyframes my-out {
   0% {
     height: auto;
+    padding: 16px;
   }
   100% {
     height: 0;
+    padding: 0;
   }
 }
 </style>

@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         text: 'GitHub',
-        link: 'https://github.com/MambaNeverOut'
+        link: 'https://github.com/MambaNeverOut/fallen-ui'
       },
     ],
     sidebar: [{
