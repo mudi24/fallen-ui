@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h2>button-group</h2>
-    <h4>预览</h4>
+  <div class="container">
     <f-button-group>
       <f-button icon="left">上一页</f-button>
       <f-button>更多</f-button>
@@ -15,7 +13,7 @@ import FButtonGroup from "../../../src/button-group.vue";
 export default {
   components: {
     "f-button": FButton,
-    "f-button-group": FButtonGroup
+    "f-button-group": FButtonGroup,
   },
   data() {
     return {
@@ -27,8 +25,20 @@ export default {
         </f-button-group>
       `
         .replace(/^ {8}/gm, "")
-        .trim()
+        .trim(),
     };
-  }
+  },
 };
 </script>
+<style scoped>
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+.container:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+</style>

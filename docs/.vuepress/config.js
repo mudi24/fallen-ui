@@ -8,8 +8,8 @@ module.exports = {
         link: '/'
       },
       {
-        text: '交流',
-        link: 'https://www.google.com/'
+        text: '组件',
+        link: '/components/button/'
       },
       {
         text: 'GitHub',

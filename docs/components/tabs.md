@@ -1,5 +1,5 @@
 ---
-title: Tabs
+title: Tabs 选项卡
 ---
 
 # tabs

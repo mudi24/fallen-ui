@@ -1,5 +1,5 @@
 ---
-title: Toast
+title: Toast 提示
 ---
 
 # toast
@@ -20,8 +20,12 @@ title: Toast
 </style>
 
 <f-button @click="$toast('点击弹出提示')">上方弹出</f-button>
-<f-button @click="$toast('点击弹出提示', {position:'middle'})">中间弹出</f-button>
-<f-button @click="$toast('点击弹出提示', {position:'bottom'})">下方弹出</f-button>
+<f-button @click="$toast('点击弹出提示', {position:'middle'})"
+  >中间弹出</f-button
+>
+<f-button @click="$toast('点击弹出提示', {position:'bottom'})"
+  >下方弹出</f-button
+>
 ```
 
 <br/>
@@ -37,12 +41,13 @@ title: Toast
 ```html
 <style>
   .fallen-toast {
-    z-index: 30 ;
+    z-index: 30;
   }
 </style>
 
 <f-button @click="onClickButton">上方弹出</f-button>
 ```
+
 ```js
 methods:{
   onClickButton() {
@@ -71,12 +76,13 @@ methods:{
 ```html
 <style>
   .fallen-toast {
-    z-index: 30 ;
+    z-index: 30;
   }
 </style>
 
 <f-button @click="onClickButton">上方弹出</f-button>
 ```
+
 ```js
 methods: {
   onClickButton() {

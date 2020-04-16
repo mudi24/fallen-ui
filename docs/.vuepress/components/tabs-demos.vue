@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h2>标签</h2>
     <h4>注意：</h4>
     <ul>
@@ -44,16 +44,26 @@ export default {
     "f-tabs-header": FTabsHeader,
     "f-tabs-body": FTabsBody,
     "f-tabs-item": FTabsItem,
-    "f-tabs-pane": FTabsPane
+    "f-tabs-pane": FTabsPane,
   },
   data() {
     return {
-      selected: "2"
+      selected: "2",
     };
-  }
+  },
 };
 </script>
 <style scoped>
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+.container:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
 ul > li {
   list-style: circle;
 }

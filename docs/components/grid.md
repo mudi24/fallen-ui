@@ -1,8 +1,10 @@
 ---
-title: Grid
+title: Grid 网格
 ---
 
 # grid
+
+<h2 style="font-weight:normal">基本用法</h2>
 
 <ClientOnly>
 
@@ -10,7 +12,9 @@ title: Grid
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 *{ box-sizing: border-box; }
@@ -49,13 +53,18 @@ title: Grid
 </f-row>
 ```
 
+:::
 <br/>
+
+<h2 style="font-weight:normal">设置固定间隔</h2>
 
 <ClientOnly>
   <grid-gutter-demos></grid-gutter-demos>
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 *{ box-sizing: border-box; }
@@ -88,13 +97,18 @@ title: Grid
 </f-row>
 ```
 
+:::
 <br/>
+
+<h2 style="font-weight:normal">自定义间隔</h2>
 
 <ClientOnly>
   <grid-offset-demos></grid-offset-demos>
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 *{ box-sizing: border-box; }
@@ -135,3 +149,5 @@ title: Grid
   </f-col>
 </f-row>
 ```
+
+:::

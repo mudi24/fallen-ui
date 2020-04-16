@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h2>this.$toast</h2>
     <h4>支持属性:</h4>
     <ul>
@@ -10,8 +10,12 @@
     </ul>
     <h4>预览</h4>
     <f-button @click="$toast('点击弹出提示')">上方弹出</f-button>
-    <f-button @click="$toast('点击弹出提示', {position:'middle'})">中间弹出</f-button>
-    <f-button @click="$toast('点击弹出提示', {position:'bottom'})">下方弹出</f-button>
+    <f-button @click="$toast('点击弹出提示', { position: 'middle' })"
+      >中间弹出</f-button
+    >
+    <f-button @click="$toast('点击弹出提示', { position: 'bottom' })"
+      >下方弹出</f-button
+    >
   </div>
 </template>
 <script>
@@ -22,12 +26,22 @@ Vue.use(plugin);
 
 export default {
   components: {
-    "f-button": FButton
+    "f-button": FButton,
   },
 };
 </script>
 
-<style>
+<style scoped>
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+.container:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
 .fallen-toast {
   z-index: 30 !important;
 }
@@ -35,7 +49,7 @@ ul > li {
   list-style: circle;
 }
 </style>
-<style  scoped>
+<style scoped>
 * {
   box-sizing: border-box;
 }

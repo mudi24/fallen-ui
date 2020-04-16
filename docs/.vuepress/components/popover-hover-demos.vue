@@ -1,5 +1,5 @@
 <template>
-  <div style="padding-top:16px;">
+  <div class="container">
     <h2>hover 触发弹出层</h2>
     <h4>预览</h4>
     <f-popover trigger="hover">
@@ -26,11 +26,21 @@ import FPopover from "../../../src/popover.vue";
 export default {
   components: {
     "f-button": FButton,
-    "f-popover": FPopover
-  }
+    "f-popover": FPopover,
+  },
 };
 </script>
 <style scoped>
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+.container:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
 ul > li {
   list-style: circle;
 }

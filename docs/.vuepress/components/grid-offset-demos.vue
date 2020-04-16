@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h2>自定义每个空隙</h2>
+  <div class="container">
     <p>可以用 offset 属性任意设置两个 col 元素之间的空隙</p>
     <h4>预览</h4>
     <f-row class="demoRow" gutter="10">
@@ -46,13 +45,23 @@ import FCol from "../../../src/col.vue";
 export default {
   components: {
     "f-row": FRow,
-    "f-col": FCol
-  }
+    "f-col": FCol,
+  },
 };
 </script>
 <style scoped>
 * {
   box-sizing: border-box;
+}
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+.container:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 .demoRow {
   margin: 10px 0;

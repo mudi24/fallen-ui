@@ -1,12 +1,17 @@
 <template>
-  <div>
+  <div class="container">
     <h2>sider布局</h2>
     <h4>预览</h4>
     <f-layout style="color: white; overflow:hidden; ">
       <f-header style="height: 50px; background:lightskyblue;">header</f-header>
       <f-layout>
-        <f-sider style="height: 100px; background:#ddd; width:200px; color: black;">sider</f-sider>
-        <f-content style="height: 100px; background:deepskyblue;">content</f-content>
+        <f-sider
+          style="height: 100px; background:#ddd; width:200px; color: black;"
+          >sider</f-sider
+        >
+        <f-content style="height: 100px; background:deepskyblue;"
+          >content</f-content
+        >
       </f-layout>
       <f-footer style="height: 50px; background:lightskyblue;">footer</f-footer>
     </f-layout>
@@ -24,7 +29,19 @@ export default {
     "f-header": FHeader,
     "f-content": FContent,
     "f-sider": FSider,
-    "f-footer": FFooter
-  }
+    "f-footer": FFooter,
+  },
 };
 </script>
+<style scoped>
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+.container:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3), 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+</style>
