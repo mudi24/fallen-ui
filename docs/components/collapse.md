@@ -2,7 +2,9 @@
 title: Collapse 折叠面板
 ---
 
-# collapse
+# Collapse 折叠面板
+
+<h2 style="font-weight:normal">基本用法</h2>
 
 <ClientOnly>
 
@@ -10,7 +12,9 @@ title: Collapse 折叠面板
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-collapse :selected.sync="selectedTab">
@@ -26,7 +30,10 @@ title: Collapse 折叠面板
 </f-collapse>
 ```
 
+:::
 <br/>
+
+<h2 style="font-weight:normal">手风琴</h2>
 
 <ClientOnly>
 
@@ -34,7 +41,9 @@ title: Collapse 折叠面板
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-collapse :selected.sync="selectedTab" single>
@@ -49,3 +58,5 @@ title: Collapse 折叠面板
   </f-collapse-item>
 </f-collapse>
 ```
+
+:::

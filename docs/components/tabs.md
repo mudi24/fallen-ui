@@ -2,7 +2,9 @@
 title: Tabs 选项卡
 ---
 
-# tabs
+# Tabs 选项卡
+
+<h2 style="font-weight:normal">设置关闭按钮</h2>
 
 <ClientOnly>
 
@@ -10,7 +12,9 @@ title: Tabs 选项卡
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码提示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-tabs :selected="selected">
@@ -34,3 +38,5 @@ data(){
   }
 }
 ```
+
+:::

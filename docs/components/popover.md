@@ -2,7 +2,9 @@
 title: Popover 弹出层
 ---
 
-# popover
+# Popover 弹出层
+
+<h2 style="font-weight:normal">设置关闭按钮</h2>
 
 <ClientOnly>
 
@@ -10,7 +12,9 @@ title: Popover 弹出层
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-popover>
@@ -39,7 +43,10 @@ title: Popover 弹出层
 </f-popover>
 ```
 
+:::
 <br/>
+
+<h2 style="font-weight:normal">设置关闭按钮</h2>
 
 <ClientOnly>
 
@@ -47,7 +54,9 @@ title: Popover 弹出层
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-popover trigger="hover">
@@ -75,3 +84,5 @@ title: Popover 弹出层
   </template>
 </f-popover>
 ```
+
+:::

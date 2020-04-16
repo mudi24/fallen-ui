@@ -16,6 +16,8 @@ title: Input 输入框
 
 <h3 style="font-weight:normal">代码演示</h3>
 
+::: details 点击查看代码
+
 ```html
 <f-input value="输入框"></f-input>
 <f-input value="禁用" disabled></f-input>
@@ -23,6 +25,7 @@ title: Input 输入框
 <f-input error="输入内容必须符合规则"></f-input>
 ```
 
+:::
 <br/>
 
 <h2 style="font-weight:normal">双向绑定</h2>
@@ -35,6 +38,10 @@ title: Input 输入框
 
 <h3 style="font-weight:normal">代码演示</h3>
 
+::: details 点击查看代码
+
 ```html
 <f-input v-model="message"></f-input>
 ```
+
+:::

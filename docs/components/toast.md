@@ -2,7 +2,9 @@
 title: Toast 提示
 ---
 
-# toast
+# Toast 提示
+
+<h2 style="font-weight:normal">this.$toast</h2>
 
 <ClientOnly>
 
@@ -10,7 +12,9 @@ title: Toast 提示
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <style>
@@ -28,7 +32,11 @@ title: Toast 提示
 >
 ```
 
+:::
+
 <br/>
+
+<h2 style="font-weight:normal">设置关闭按钮</h2>
 
 <ClientOnly>
 
@@ -36,7 +44,9 @@ title: Toast 提示
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <style>
@@ -63,7 +73,10 @@ methods:{
 }
 ```
 
+:::
 <br/>
+
+<h2 style="font-weight:normal">设置HTMl</h2>
 
 <ClientOnly>
 
@@ -71,7 +84,9 @@ methods:{
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <style>
@@ -92,3 +107,5 @@ methods: {
   }
 }
 ```
+
+:::

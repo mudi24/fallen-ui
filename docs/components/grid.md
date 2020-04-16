@@ -2,7 +2,7 @@
 title: Grid 网格
 ---
 
-# grid
+# Grid 网格
 
 <h2 style="font-weight:normal">基本用法</h2>
 

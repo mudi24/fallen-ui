@@ -2,7 +2,9 @@
 title: Layout 布局
 ---
 
-# layout
+# Layout 布局
+
+<h2 style="font-weight:normal">基本用法</h2>
 
 <ClientOnly>
 
@@ -10,7 +12,9 @@ title: Layout 布局
 
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-layout style="color: white; margin-bottom:50px;">
@@ -26,13 +30,18 @@ title: Layout 布局
 </f-layout>
 ```
 
+:::
 <br/>
+
+<h2 style="font-weight:normal">sider布局</h2>
 
 <ClientOnly>
   <layout-sider-demos></layout-sider-demos>
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-layout style="color: white; overflow:hidden; margin-bottom:50px;">
@@ -53,13 +62,18 @@ title: Layout 布局
 </f-layout>
 ```
 
+:::
 <br/>
+
+<h2 style="font-weight:normal">侧边布局</h2>
 
 <ClientOnly>
   <layout-sider2-demos></layout-sider2-demos>
 </ClientOnly>
 
-#### 代码
+<h3 style="font-weight:normal">代码演示</h3>
+
+::: details 点击查看代码
 
 ```html
 <f-layout style="color: white; overflow:hidden; margin-bottom:50px;">
@@ -79,3 +93,5 @@ title: Layout 布局
   </f-layout>
 </f-layout>
 ```
+
+:::
