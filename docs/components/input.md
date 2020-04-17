@@ -44,4 +44,21 @@ title: Input 输入框
 <f-input v-model="message"></f-input>
 ```
 
+```js
+data() {
+  return {
+    message: "下面会跟着这里变吗？",
+  };
+}
+```
+
 :::
+
+### Attributes
+
+|   参数   |           说明           |  类型   |     可选值     | 默认值 |
+| :------: | :----------------------: | :-----: | :------------: | :----: |
+|  value   |      输入框内的文本      | String  |                |        |
+| disabled |      是否为禁用状态      | Boolean | **true/false** | false  |
+| readonly |      是否为只读状态      | Boolean | **true/false** | false  |
+|  error   | 输入内容不合格的提示文本 | String  |                |        |

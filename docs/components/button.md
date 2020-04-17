@@ -32,6 +32,8 @@ sidebarDepth: 2
 
 <h2 style="font-weight:normal">按钮组</h2>
 
+以按钮组的方式出现，常用于多项类似操作。
+
 <ClientOnly>
 <button-group-demos></button-group-demos>
 </ClientOnly>
@@ -50,14 +52,10 @@ sidebarDepth: 2
 
 :::
 
-:::warning WARNING 使用时一定要引入插件
-vue
-:::
-
 ### Attributes
 
-| 参数 | 说明 | 类型 | 可选值 | 默认值 |
-| :--: | :--: | :--: | :----: | :----: |
-| 香蕉 | \$1  |  5   |
-| 苹果 | \$1  |  6   |
-| 草莓 | \$1  |  7   |
+|     参数     |          说明          |  类型   |       可选值       | 默认值 |
+| :----------: | :--------------------: | :-----: | :----------------: | :----: |
+|   loading    | 按钮是否显示加载中状态 | Boolean |   **true/false**   | false  |
+| iconPosition |  图标相对于文本的位置  | String  | **'left'/'right'** | 'left' |
+|   disabled   |   是否显示为禁用状态   | Boolean |   **true/false**   | false  |

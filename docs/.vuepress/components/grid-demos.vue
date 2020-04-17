@@ -1,19 +1,5 @@
 <template>
   <div class="container">
-    <p>功能：使用本组件通过行（row）和列（col）来定义你的页面</p>
-    概述：
-    <ul>
-      <li>
-        我们把每一行（row）分为24份，如果 row 中的 col 总数超过24，多出来的 col
-        就会另起一行排列
-      </li>
-      <li>你的内容应当放置于 col 内，并且，只有 col 可以作为 row 的直接元素</li>
-      <li>
-        你可以为元素设置跨越的范围，例如
-        <strong>{{ text }}</strong>
-      </li>
-    </ul>
-    <h4>预览</h4>
     <f-row class="demoRow">
       <f-col span="12">
         <div class="demoCol">12</div>
@@ -53,14 +39,9 @@ export default {
     "f-row": FRow,
     "f-col": FCol,
   },
-  data() {
-    return {
-      text: '<f-col span="6"></f-col>',
-    };
-  },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .container {
   max-width: 800px;
   margin: 30px auto;
@@ -79,10 +60,20 @@ ul > li {
 }
 .demoCol {
   height: 50px;
-  border: 1px solid #ccc;
-  background: #eee;
+  border: 1px solid inherit;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.col:nth-child(2n + 1) {
+  .demoCol {
+    background: rgba(0, 146, 255, 0.75);
+  }
+}
+.col:nth-child(2n) {
+  .demoCol {
+    background: #0092ff;
+  }
 }
 </style>

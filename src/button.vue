@@ -18,13 +18,13 @@ import Icon from "./icon";
 export default {
   name: "Fallen-Button",
   components: {
-    "f-icon": Icon
+    "f-icon": Icon,
   },
   props: {
     icon: {},
     loading: {
       type: Boolean,
-      default: false
+      default: false,
     },
     iconPosition: {
       type: String,
@@ -32,13 +32,9 @@ export default {
       validator(value) {
         return !(value !== "left" && value !== "right");
         // 想不到的写法： return value === "left" || value === "right";
-      }
-    }
+      },
+    },
   },
-  data() {
-    return {};
-  },
-  methods: {}
 };
 </script>
 

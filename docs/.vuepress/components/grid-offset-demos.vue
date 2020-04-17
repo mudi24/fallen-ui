@@ -1,39 +1,23 @@
 <template>
   <div class="container">
-    <p>可以用 offset 属性任意设置两个 col 元素之间的空隙</p>
-    <h4>预览</h4>
-    <f-row class="demoRow" gutter="10">
-      <f-col span="4">
-        <div class="demoCol">4</div>
-      </f-col>
-      <f-col span="4" offset="1">
-        <div class="demoCol">4</div>
-      </f-col>
-      <f-col span="4" offset="4">
-        <div class="demoCol">4</div>
-      </f-col>
-      <f-col span="4" offset="3">
-        <div class="demoCol">4</div>
-      </f-col>
-    </f-row>
     <f-row class="demoRow">
-      <f-col span="2">
+      <f-col span="24" :ipad="{ span: 12 }" :narrow-pc="{ span: 8 }">
+        <div class="demoCol">1</div>
+      </f-col>
+      <f-col span="24" :ipad="{ span: 12 }" :narrow-pc="{ span: 8 }">
         <div class="demoCol">2</div>
       </f-col>
-      <f-col span="2" offset="3">
-        <div class="demoCol">2</div>
+      <f-col span="24" :ipad="{ span: 12 }" :narrow-pc="{ span: 8 }">
+        <div class="demoCol">3</div>
       </f-col>
-      <f-col span="2" offset="6">
-        <div class="demoCol">2</div>
+      <f-col span="24" :ipad="{ span: 12 }" :narrow-pc="{ span: 8 }">
+        <div class="demoCol">4</div>
       </f-col>
-      <f-col span="2" offset="2">
-        <div class="demoCol">2</div>
+      <f-col span="24" :ipad="{ span: 12 }" :narrow-pc="{ span: 8 }">
+        <div class="demoCol">5</div>
       </f-col>
-      <f-col span="2" offset="1">
-        <div class="demoCol">2</div>
-      </f-col>
-      <f-col span="2">
-        <div class="demoCol">2</div>
+      <f-col span="24" :ipad="{ span: 12 }" :narrow-pc="{ span: 8 }">
+        <div class="demoCol">6</div>
       </f-col>
     </f-row>
   </div>
@@ -49,7 +33,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 * {
   box-sizing: border-box;
 }
@@ -68,10 +52,20 @@ export default {
 }
 .demoCol {
   height: 50px;
-  border: 1px solid #ccc;
-  background: #eee;
+  border: 1px solid inherit;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.col:nth-child(2n + 1) {
+  .demoCol {
+    background: rgba(0, 146, 255, 0.75);
+  }
+}
+.col:nth-child(2n) {
+  .demoCol {
+    background: #0092ff;
+  }
 }
 </style>

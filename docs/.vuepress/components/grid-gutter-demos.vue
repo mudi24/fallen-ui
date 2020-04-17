@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <p>可以用 gutter 属性设置 row 元素之间所有 col 元素之间的空隙</p>
-    <h4>预览</h4>
     <f-row class="demoRow" gutter="10">
       <f-col span="8">
         <div class="demoCol">8</div>
@@ -40,7 +38,7 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 * {
   box-sizing: border-box;
 }
@@ -59,10 +57,20 @@ export default {
 }
 .demoCol {
   height: 50px;
-  border: 1px solid #ccc;
-  background: #eee;
+  border: 1px solid inherit;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.col:nth-child(2n + 1) {
+  .demoCol {
+    background: rgba(0, 146, 255, 0.75);
+  }
+}
+.col:nth-child(2n) {
+  .demoCol {
+    background: #0092ff;
+  }
 }
 </style>

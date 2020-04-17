@@ -5,10 +5,10 @@
 </template>
 
 <script>
-let validator = value => {
+let validator = (value) => {
   let keys = Object.keys(value);
   let valid = true;
-  keys.forEach(key => {
+  keys.forEach((key) => {
     if (!["span", "offset"].includes(key)) {
       valid = false;
     }
@@ -19,31 +19,31 @@ export default {
   name: "FallenCol",
   props: {
     span: {
-      type: [Number, String]
+      type: [Number, String],
     },
     offset: {
-      type: [Number, String]
+      type: [Number, String],
     },
     ipad: {
       type: Object,
-      validator
+      validator,
     },
     narrowPc: {
       type: Object,
-      validator
+      validator,
     },
     pc: {
       type: Object,
-      validator
+      validator,
     },
     widePc: {
       type: Object,
-      validator
-    }
+      validator,
+    },
   },
   data() {
     return {
-      gutter: 0
+      gutter: 0,
     };
   },
   methods: {
@@ -59,7 +59,7 @@ export default {
         array.push(`offset-${str}${obj.offset}`);
       }
       return array;
-    }
+    },
   },
   computed: {
     colClass() {
@@ -70,21 +70,21 @@ export default {
         ...createClasses(ipad, "ipad-"),
         ...createClasses(narrowPc, "narrow-pc-"),
         ...createClasses(pc, "pc-"),
-        ...createClasses(widePc, "wide-pc-")
+        ...createClasses(widePc, "wide-pc-"),
       ];
     },
     colStyle() {
       let { gutter } = this;
       return {
         paddingLeft: gutter / 2 + "px",
-        paddingRight: gutter / 2 + "px"
+        paddingRight: gutter / 2 + "px",
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .col {
   $class-prefix: col-; // class 前缀
   @for $n from 1 through 24 {
