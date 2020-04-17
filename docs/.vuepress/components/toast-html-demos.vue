@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <h2>设置HTML</h2>
-    <h4>预览</h4>
     <f-button @click="onClickButton">上方弹出</f-button>
   </div>
 </template>

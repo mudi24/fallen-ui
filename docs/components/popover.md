@@ -4,6 +4,8 @@ title: Popover 弹出层
 
 # Popover 弹出层
 
+点击/鼠标移入元素，弹出卡片浮层。
+
 <h2 style="font-weight:normal">设置关闭按钮</h2>
 
 <ClientOnly>

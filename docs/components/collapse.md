@@ -4,6 +4,8 @@ title: Collapse 折叠面板
 
 # Collapse 折叠面板
 
+可以折叠/展开的内容区域。
+
 <h2 style="font-weight:normal">基本用法</h2>
 
 <ClientOnly>

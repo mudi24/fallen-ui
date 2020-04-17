@@ -11,7 +11,7 @@ import Content from './content.vue'
 import Sider from './sider.vue'
 import Footer from './footer.vue'
 import Toast from './toast.vue'
-import plugin from './plugin.js'
+import ToastPlugin from './plugin.js'
 import Tabs from './tabs.vue'
 import TabsHeader from './tabs-header.vue'
 import TabsBody from './tabs-body.vue'
@@ -33,7 +33,7 @@ Vue.component('f-sider', Sider)
 Vue.component('f-content', Content)
 Vue.component('f-footer', Footer)
 Vue.component('f-toast', Toast)
-Vue.use(plugin)
+// Vue.use(ToastPlugin)
 Vue.component('f-tabs', Tabs)
 Vue.component('f-tabs-header', TabsHeader)
 Vue.component('f-tabs-body', TabsBody)

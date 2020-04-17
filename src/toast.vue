@@ -6,7 +6,9 @@
         <div v-else v-html="$slots.default[0]"></div>
       </div>
       <div class="line" ref="line"></div>
-      <span class="close" v-if="closeButton" @click="onClickClose">{{closeButton.text}}</span>
+      <span class="close" v-if="closeButton" @click="onClickClose">{{
+        closeButton.text
+      }}</span>
     </div>
   </div>
 </template>
@@ -20,28 +22,28 @@ export default {
       default: 5,
       validator(value) {
         return value === false || typeof value === "number";
-      }
+      },
     },
     closeButton: {
       type: Object,
       default() {
         return {
           text: "关闭",
-          callback: undefined
+          callback: undefined,
         };
-      }
+      },
     },
     enableHtml: {
       type: Boolean,
-      default: false
+      default: false,
     },
     position: {
       type: String,
       default: "top",
       validator(value) {
         return ["top", "bottom", "middle"].indexOf(value) >= 0;
-      }
-    }
+      },
+    },
   },
   mounted() {
     this.updateStyles();
@@ -50,7 +52,7 @@ export default {
   computed: {
     toastClasses() {
       return { [`position-${this.position}`]: true };
-    }
+    },
   },
   methods: {
     updateStyles() {
@@ -76,12 +78,12 @@ export default {
       if (this.closeButton && typeof this.closeButton.callback === "function") {
         this.closeButton.callback(this);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 $font-size: 14px;
 $toast-min-height: 40px;
 $toast-bg: rgba(0, 0, 0, 0.75);
@@ -118,6 +120,7 @@ $animation-duration: 500ms;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 30 !important;
   &.position-top {
     top: 0;
     .toast {

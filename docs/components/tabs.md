@@ -4,6 +4,8 @@ title: Tabs 选项卡
 
 # Tabs 选项卡
 
+选项卡切换组件
+
 <h2 style="font-weight:normal">设置关闭按钮</h2>
 
 <ClientOnly>

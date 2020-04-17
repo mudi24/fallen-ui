@@ -4,6 +4,8 @@ title: Grid 网格
 
 # Grid 网格
 
+24 格网络
+
 <h2 style="font-weight:normal">基本用法</h2>
 
 <ClientOnly>
