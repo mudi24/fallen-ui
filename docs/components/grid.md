@@ -59,6 +59,19 @@ title: Grid 网格
 </f-row>
 ```
 
+```vue
+<script>
+  import { FRow, FCol } from "fallen-ui";
+
+  export default {
+    components: {
+      "f-row": FRow,
+      "f-col": FCol,
+    },
+  };
+</script>
+```
+
 :::
 <br/>
 
@@ -103,6 +116,19 @@ title: Grid 网格
 </f-row>
 ```
 
+```vue
+<script>
+  import { FRow, FCol } from "fallen-ui";
+
+  export default {
+    components: {
+      "f-row": FRow,
+      "f-col": FCol,
+    },
+  };
+</script>
+```
+
 :::
 <br/>
 
@@ -119,7 +145,7 @@ title: Grid 网格
 ::: details 点击查看代码
 
 ```html
-<f-row class="demoRow">
+<f-row>
   <f-col span="24" :ipad="{ span: 12 }" :narrow-pc="{ span: 8 }">
     <div>1</div>
   </f-col>
@@ -141,22 +167,35 @@ title: Grid 网格
 </f-row>
 ```
 
+```vue
+<script>
+  import { FRow, FCol } from "fallen-ui";
+
+  export default {
+    components: {
+      "f-row": FRow,
+      "f-col": FCol,
+    },
+  };
+</script>
+```
+
 :::
 
 ### Row
 
 |  参数  |      说明      |     类型      |           可选值            |  默认值  |
 | :----: | :------------: | :-----------: | :-------------------------: | :------: |
-| gutter | 网格之间的间隔 | Number/String |                             |          |
-| align  |  水平对齐方式  |    String     | **'left'/'center'/'right'** | 'center' |
+| gutter | 网格之间的间隔 | Number/String |          无                   |  无        |
+| align  |  内容水平对齐方式  |    String     | **'left'/'center'/'right'** | 'center' |
 
 ### Col
 
-|   参数   |              说明              |     类型      | 可选值 | 默认值 |
-| :------: | :----------------------------: | :-----------: | :----: | :----: |
-|   span   |         网格之间的间隔         | Number/String |        |        |
-|  offset  |          垂直对齐方式          | Number/String |        |        |
-|   ipad   | 最小宽度为 577px 时的网格布局  |    Object     |        |        |
-| narrowPc | 最小宽度为 769px 时的网格布局  |    Object     |        |        |
-|    pc    | 最小宽度为 993px 时的网格布局  |    Object     |        |        |
-|  widePc  | 最小宽度为 1201px 时的网格布局 |    Object     |        |        |
+|   参数   |              说明              |     类型      | 
+| :------: | :----------------------------: | :-----------: | 
+|   span   |         网格之间的间隔         | Number/String |  
+|  offset  |          垂直对齐方式          | Number/String |  
+|   ipad   | 最小宽度为 577px 时的网格布局  |    Object     |   
+| narrowPc | 最小宽度为 769px 时的网格布局  |    Object     |  
+|    pc    | 最小宽度为 993px 时的网格布局  |    Object     |      
+|  widePc  | 最小宽度为 1201px 时的网格布局 |    Object     |    

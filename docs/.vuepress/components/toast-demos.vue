@@ -14,7 +14,7 @@
 import FButton from "../../../src/button.vue";
 import ToastPlugin from "../../../src/plugin.js";
 import Vue from "vue";
-// Vue.use(ToastPlugin);
+Vue.use(ToastPlugin);
 
 export default {
   components: {

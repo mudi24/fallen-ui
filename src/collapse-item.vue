@@ -16,7 +16,7 @@
 import FIcon from "./icon.vue";
 
 export default {
-  name: "FallenCollapse",
+  name: "FallenCollapseItem",
   components: {
     "f-icon": FIcon
   },

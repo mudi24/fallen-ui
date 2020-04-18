@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <f-row class="demoRow">
+    <f-row class="demoRow" align="right">
       <f-col span="12">
         <div class="demoCol">12</div>
       </f-col>

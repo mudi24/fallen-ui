@@ -26,6 +26,18 @@ sidebarDepth: 2
 <f-button disabled>默认按钮</f-button>
 ```
 
+```vue
+<script>
+  import FButton from "fallen-ui";
+
+  export default {
+    components: {
+      "f-button": FButton,
+    },
+  };
+</script>
+```
+
 :::
 
 <br/>
@@ -48,6 +60,19 @@ sidebarDepth: 2
   <f-button>更多</f-button>
   <f-button icon="right" icon-position="right">下一页</f-button>
 </f-button-group>
+```
+
+```vue
+<script>
+  import { FButton, FButtonGroup } from "fallen-ui";
+
+  export default {
+    components: {
+      "f-button": FButton,
+      "f-button-group": FButtonGroup,
+    },
+  };
+</script>
 ```
 
 :::

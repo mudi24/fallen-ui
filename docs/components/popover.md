@@ -44,6 +44,18 @@ title: Popover 弹出层
   </template>
 </f-popover>
 ```
+```vue
+<script>
+  import { FButton, FPopover } from "fallen-ui";
+
+  export default {
+    components: {
+      "f-button": FButton,
+      "f-popover": FPopover,
+    },
+  };
+</script>
+```
 
 :::
 <br/>
@@ -87,6 +99,18 @@ title: Popover 弹出层
 </f-popover>
 ```
 
+```vue
+<script>
+  import { FButton, FPopover } from "fallen-ui";
+
+  export default {
+    components: {
+      "f-button": FButton,
+      "f-popover": FPopover,
+    },
+  };
+</script>
+```
 :::
 
 ### Attributes

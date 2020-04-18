@@ -31,7 +31,20 @@ title: Layout 布局
   </f-footer>
 </f-layout>
 ```
+```vue
+<script>
+  import { FLayout, FHeader, FContent, FFooter}  from "fallen-ui";
 
+  export default {
+    components: {
+      "f-layout": FLayout,
+      "f-header": FHeader,
+      "f-content": FContent,
+      "f-footer": FFooter,
+    },
+  };
+</script>
+```
 :::
 <br/>
 
@@ -63,7 +76,20 @@ title: Layout 布局
   </f-footer>
 </f-layout>
 ```
+```vue
+<script>
+  import { FLayout, FHeader, FContent, FFooter}  from "fallen-ui";
 
+  export default {
+    components: {
+      "f-layout": FLayout,
+      "f-header": FHeader,
+      "f-content": FContent,
+      "f-footer": FFooter,
+    },
+  };
+</script>
+```
 :::
 <br/>
 
@@ -95,15 +121,28 @@ title: Layout 布局
   </f-layout>
 </f-layout>
 ```
+```vue
+<script>
+  import { FLayout, FHeader, FContent, FFooter}  from "fallen-ui";
 
+  export default {
+    components: {
+      "f-layout": FLayout,
+      "f-header": FHeader,
+      "f-content": FContent,
+      "f-footer": FFooter,
+    },
+  };
+</script>
+```
 :::
 
 ### Attributes
 
 |  组件   |   功能   |                                       说明                                       |
 | :-----: | :------: | :------------------------------------------------------------------------------: |
-| layout  | 布局容器 | 其下可嵌套 header、sider、content、footer 或 layout 本身，可以放在任何父容器中。 |
-| header  |  顶部栏  |               自带默认样式，其下可嵌套任何元素，只能放在 Layout 中               |
-| content |  内容区  |               自带默认样式，其下可嵌套任何元素，只能放在 Layout 中               |
-| footer  |  底部栏  |               自带默认样式，其下可嵌套任何元素，只能放在 Layout 中               |
-|  sider  |  侧边栏  |          自带默认样式及基本功能，其下可嵌套任何元素，只能放在 Layout 中          |
+| Layout  | 布局容器 | 其下可嵌套 header、sider、content、footer 或 layout 本身，可以放在任何父容器中。 |
+| Header  |  顶部栏  |               自带默认样式，其下可嵌套任何元素，只能放在 Layout 中               |
+| Content |  内容区  |               自带默认样式，其下可嵌套任何元素，只能放在 Layout 中               |
+| Footer  |  底部栏  |               自带默认样式，其下可嵌套任何元素，只能放在 Layout 中               |
+|  Sider  |  侧边栏  |          自带默认样式及基本功能，其下可嵌套任何元素，只能放在 Layout 中          |
