@@ -19,11 +19,11 @@ export default {
       this.$refs.line.style.width = `${width}px`;
       this.$refs.line.style.left = `${left - left2}px`;
     });
-  }
+  },
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 $tabs-height: 40px;
 $blue: #1890ff;
 $border-color: #ddd;
@@ -36,7 +36,7 @@ $border-color: #ddd;
   border-bottom: 1px solid $border-color;
   > .line {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     border-bottom: 1px solid $blue;
     border-radius: 4px;
     transition: all 0.35s;

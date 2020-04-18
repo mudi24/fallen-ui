@@ -6,7 +6,7 @@ title: Popover 弹出层
 
 点击/鼠标移入元素，弹出卡片浮层。
 
-<h2 style="font-weight:normal">设置关闭按钮</h2>
+<h2 style="font-weight:normal">基本用法</h2>
 
 <ClientOnly>
 
@@ -48,7 +48,7 @@ title: Popover 弹出层
 :::
 <br/>
 
-<h2 style="font-weight:normal">设置关闭按钮</h2>
+<h2 style="font-weight:normal">鼠标移入触发弹出层</h2>
 
 <ClientOnly>
 
@@ -88,3 +88,10 @@ title: Popover 弹出层
 ```
 
 :::
+
+### Attributes
+
+|   参数   |   说明   |  类型   |            可选值             | 默认值 |
+| :------: | :------: | :-----: | :---------------------------: | :----: |
+| position | 弹出位置 | String  | 'top'/'bottom'/'left'/'right' | 'top'  |
+| trigger  | 触发方式 | Boolean |        **true/false**         | false  |

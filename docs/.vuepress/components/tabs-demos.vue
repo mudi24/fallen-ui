@@ -1,23 +1,6 @@
 <template>
   <div class="container">
-    <h2>标签</h2>
-    <h4>注意：</h4>
-    <ul>
-      <li>
-        f-tabs（
-        <strong>必须</strong>传入默认选择的tab）
-      </li>
-      <li>
-        f-tabs-item（
-        <strong>必须</strong>传入name属性）（可选属性：disabled）
-      </li>
-      <li>
-        f-tabs-pane（
-        <strong>必须</strong>传入name属性）
-      </li>
-    </ul>
-    <h4>预览</h4>
-    <f-tabs :selected="selected">
+    <f-tabs :selected="selected" direction="vertical">
       <f-tabs-header>
         <f-tabs-item name="1">tab 1</f-tabs-item>
         <f-tabs-item name="2">tab 2</f-tabs-item>

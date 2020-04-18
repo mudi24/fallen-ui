@@ -1,31 +1,19 @@
 <template>
   <div class="container">
-    <h2>折叠面板</h2>
-    <h4>简介：</h4>
-    <ul>
-      <li>
-        f-collapse（传入的 selectedTab 应该是一个
-        <strong>数组</strong>，里面包含被选中的 tab标签）
-      </li>
-      <li>
-        f-collapse（支持
-        <strong>single</strong> 属性，添加
-        <strong>single</strong> 属性组件变为手风琴效果）
-      </li>
-      <li>
-        f-collapse-item（
-        <strong>必须</strong>传入 <strong>title 和 name</strong>）
-      </li>
-    </ul>
-    <h4>预览</h4>
     <f-collapse :selected.sync="selectedTab">
-      <f-collapse-item title="标题1" name="1"
-        >两只老虎，两只老虎，跑得快，跑得快</f-collapse-item
+      <f-collapse-item title="一致性 Consistency" name="1"
+        >与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；
+        在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</f-collapse-item
       >
-      <f-collapse-item title="标题2" name="2"
-        >一只没有耳朵，一只没有尾巴</f-collapse-item
+      <f-collapse-item title="反馈 Feedback" name="2">
+        控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；
+        页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</f-collapse-item
       >
-      <f-collapse-item title="标题3" name="3">好奇怪，好奇怪</f-collapse-item>
+      <f-collapse-item title="效率 Efficiency" name="3"
+        >简化流程：设计简洁直观的操作流程；
+        清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；
+        帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</f-collapse-item
+      >
     </f-collapse>
   </div>
 </template>
@@ -59,12 +47,15 @@ ul > li {
   list-style: circle;
 }
 .collapse > .collapseItem:nth-child(1) {
-  background: rgb(240, 240, 240);
-}
-.collapse > .collapseItem:nth-child(3) {
-  background: rgb(220, 220, 220);
+  background: skyblue;
+  color: white;
 }
 .collapse > .collapseItem:nth-child(2) {
-  background: rgb(210, 210, 210);
+  background: deepskyblue;
+  color: white;
+}
+.collapse > .collapseItem:nth-child(3) {
+  background: lightskyblue;
+  color: white;
 }
 </style>

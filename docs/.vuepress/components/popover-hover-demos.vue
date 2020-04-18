@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <h2>hover 触发弹出层</h2>
-    <h4>预览</h4>
     <f-popover trigger="hover">
       <f-button>上方弹出</f-button>
       <template slot="content">弹出内容</template>

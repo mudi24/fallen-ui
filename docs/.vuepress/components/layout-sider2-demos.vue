@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <h2>侧边布局</h2>
-    <h4>预览</h4>
     <f-layout style="color: white; overflow:hidden; ">
       <f-sider
         style="height: 200px; background:#ddd; width:200px; color: black;"

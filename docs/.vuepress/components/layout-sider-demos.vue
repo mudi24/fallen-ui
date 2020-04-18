@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <h2>sider布局</h2>
-    <h4>预览</h4>
     <f-layout style="color: white; overflow:hidden; ">
       <f-header style="height: 50px; background:lightskyblue;">header</f-header>
       <f-layout>

@@ -22,15 +22,6 @@ title: Grid 网格
 
 <h3 style="font-weight:normal">代码演示</h3>
 
-::: warning 注意：使用前需要添加这行 css 代码
-
-```css
-* {
-  box-sizing: border-box;
-}
-```
-
-:::
 ::: details 点击查看代码
 
 ```html
