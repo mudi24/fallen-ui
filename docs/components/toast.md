@@ -44,7 +44,9 @@ title: Toast 全局提示
 ```
 
 :::
-
+:::warning 提示：
+使用 Toast 组件使不要忘记添加 **`Vue.use(ToastPlugin);`**
+:::
 <br/>
 
 <h2 style="font-weight:normal">设置关闭按钮</h2>

@@ -37,22 +37,22 @@ title: Tabs 选项卡
 
 ```vue
 <script>
-import { FTabs, FTabsHeader, FTabsBody, FTabsItem, FTabsPane } from "fallen-ui";
+  import { FTabs, FTabsHeader, FTabsBody, FTabsItem, FTabsPane } from "fallen-ui";
 
-export default {
-  components: {
-    "f-tabs": FTabs,
-    "f-tabs-header": FTabsHeader,
-    "f-tabs-body": FTabsBody,
-    "f-tabs-item": FTabsItem,
-    "f-tabs-pane": FTabsPane,
-  },
-  data() {
-    return {
-      selected: "2",
-    };
-  },
-};
+  export default {
+    components: {
+      "f-tabs": FTabs,
+      "f-tabs-header": FTabsHeader,
+      "f-tabs-body": FTabsBody,
+      "f-tabs-item": FTabsItem,
+      "f-tabs-pane": FTabsPane,
+    },
+    data() {
+      return {
+        selected: "2",
+      };
+    },
+  };
 </script>
 ```
 

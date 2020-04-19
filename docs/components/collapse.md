@@ -34,19 +34,19 @@ title: Collapse 折叠面板
 
 ```vue
 <script>
-import { FCollapse, FCollapseItem } from "fallen-ui";
+  import { FCollapse, FCollapseItem } from "fallen-ui";
 
-export default {
-  components: {
-    "f-collapse": FCollapse,
-    "f-collapse-item": FCollapseItem,
-  },
-  data() {
-    return {
-      selectedTab: ["2", "3"],
-    };
-  },
-};
+  export default {
+    components: {
+      "f-collapse": FCollapse,
+      "f-collapse-item": FCollapseItem,
+    },
+    data() {
+      return {
+        selectedTab: ["2", "3"],
+      };
+    },
+  };
 </script>
 ```
 
@@ -81,19 +81,19 @@ export default {
 
 ```vue
 <script>
-import { FCollapse, FCollapseItem } from "fallen-ui";
+  import { FCollapse, FCollapseItem } from "fallen-ui";
 
-export default {
-  components: {
-    "f-collapse": FCollapse,
-    "f-collapse-item": FCollapseItem,
-  },
-  data() {
-    return {
-      selectedTab: ["3"],
-    };
-  },
-};
+  export default {
+    components: {
+      "f-collapse": FCollapse,
+      "f-collapse-item": FCollapseItem,
+    },
+    data() {
+      return {
+        selectedTab: ["3"],
+      };
+    },
+  };
 </script>
 ```
 

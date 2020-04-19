@@ -134,7 +134,7 @@ title: Grid 网格
 
 <h2 style="font-weight:normal">自适应网格</h2>
 
-根据窗口宽度调整网格布局方式
+根据浏览器窗口宽度调整网格布局方式
 
 <ClientOnly>
   <grid-offset-demos></grid-offset-demos>
