@@ -48,6 +48,7 @@ $color: #333;
 $border-color: #999;
 $border-color-hover: #666;
 
+*, *::before, *::after { box-sizing: border-box; }
 @keyframes spin {
   0% {
     transform: rotate(0deg);

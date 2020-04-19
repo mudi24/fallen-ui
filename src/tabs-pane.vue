@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 $blue: #1890ff;
-
+*, *::before, *::after { box-sizing: border-box; }
 .tabs-pane {
   padding: 1em;
 }

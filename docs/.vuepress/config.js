@@ -3,6 +3,7 @@ module.exports = {
   title: 'Fallen UI',
   description: '一个很 nice 的 UI 框架 ',
   themeConfig: {
+    logo: '/gear.gif',
     nav: [{
         text: '主页',
         link: '/'

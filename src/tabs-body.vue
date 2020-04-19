@@ -12,6 +12,5 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.tabs {
-}
+*, *::before, *::after { box-sizing: border-box; }
 </style>

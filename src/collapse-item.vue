@@ -62,6 +62,7 @@ export default {
 <style lang='scss' scoped>
 $grey: #ddd;
 $border-radius: 4px;
+*, *::before, *::after { box-sizing: border-box; }
 .collapseItem {
   > .title {
     border: 1px solid $grey;

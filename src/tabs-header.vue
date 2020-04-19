@@ -27,6 +27,7 @@ export default {
 $tabs-height: 40px;
 $blue: #1890ff;
 $border-color: #ddd;
+*, *::before, *::after { box-sizing: border-box; }
 .tabs-header {
   display: flex;
   height: $tabs-height;

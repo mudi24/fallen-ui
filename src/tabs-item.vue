@@ -55,6 +55,7 @@ export default {
 <style lang='scss' scoped>
 $blue: #1890ff;
 $disabled-text-color: grey;
+*, *::before, *::after { box-sizing: border-box; }
 .tabs-item {
   flex-shrink: 1;
   padding: 0 1em;

@@ -4,22 +4,19 @@ title: 快速上手
 
 # 快速上手
 
-- 使用本框架前，请在 CSS 中开启 border-box （IE 8 及以上浏览器都支持此样式）
+### 示例
 
-```css
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+1. 引入需要的组件
+```js
+import { Button, ButtonGroup, Icon } from "fallen-ui";
+```
+2. 引入样式
+```js
+import "fallen-ui/dist/index.css";
 ```
 
-- 引入 fallen-ui，像使用正常的 vue 组件那样使用即可
-
-```javascript
-import { Button, ButtonGroup, Icon } from "fallen-ui";
-import "fallen-ui/dist/index.css";
-
+3. 注册组件
+```js
 export default {
   name: "app",
   components: {
@@ -27,5 +24,6 @@ export default {
     "f-icon": Icon,
     "f-button-group": ButtonGroup
   }
-};
+}
 ```
+4. 接下来你可以在项目中任意使用组件，各个组件的使用方法请参阅它们各自的文档。

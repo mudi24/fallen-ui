@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+*, *::before, *::after { box-sizing: border-box; }
 .sider {
   position: relative;
   > button {

@@ -88,6 +88,7 @@ $font-size: 14px;
 $toast-min-height: 40px;
 $toast-bg: rgba(0, 0, 0, 0.75);
 $animation-duration: 500ms;
+*, *::before, *::after { box-sizing: border-box; }
 @keyframes slide-up {
   0% {
     opacity: 0;

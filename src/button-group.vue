@@ -23,6 +23,7 @@ export default {
 <style lang="scss" scoped>
 $border-radius: 4px;
 
+*, *::before, *::after { box-sizing: border-box; }
 .f-button-group {
   display: inline-flex;
   vertical-align: middle;

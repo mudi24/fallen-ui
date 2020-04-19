@@ -2,7 +2,7 @@
 title: Blogging Like a Hacker
 lang: en-US
 home: true
-heroImage: /hero.png
+heroImage: /gear.gif
 heroText: Fallen UI
 tagline: Fallen，一套基于 Vue 2.0 的简易组件库
 actionText: 开始使用 →

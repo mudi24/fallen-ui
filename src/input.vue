@@ -51,6 +51,7 @@ $border-radius: 4px;
 $font-size: 14px;
 $box-shadow-color: rgba(0, 0, 0, 0.5);
 $red: #f14530;
+*, *::before, *::after { box-sizing: border-box; }
 .wrapper {
   font-size: $font-size;
   display: inline-flex;

@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+*, *::before, *::after { box-sizing: border-box; }
 .content {
   flex-grow: 1;
 }

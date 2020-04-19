@@ -132,6 +132,7 @@ export default {
 <style lang='scss' scoped>
 $border-color: #333;
 $border-radius: 4px;
+*, *::before, *::after { box-sizing: border-box; }
 .popover {
   display: inline-block;
   vertical-align: top;

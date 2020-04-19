@@ -40,6 +40,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+*, *::before, *::after { box-sizing: border-box; }
 .row {
   display: flex;
   flex-wrap: wrap;
